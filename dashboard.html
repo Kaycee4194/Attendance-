@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./authentication.js"></script>
+    <title>Attendance</title>
+    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+  <script src="./logout.js"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-light bg-light"id="nav1">
+        <h1 class="display-4 text-success">Decagon Institute</h1>
+        <button id="logout" type="button" class="btn btn-danger">Logout</button>
+      </nav>
+      <div class="mx-auto h-50 w-75" style="margin-top: 10%; border-radius: 10px;">
+        <h2 class="text-dark">Welcome Admin</h2>
+        <form class="form-inline w-50 mx-auto">
+                <a href="./createEmployee.html" type="button" class="btn btn-dark btn-block mb-2 w-200">Create Employee</a>
+                <a href="./deleteEmployee.html" type="button" class="btn btn-dark btn-block mb-2 w-200">View/Delete Employee</a>
+                <a href="./meeting.html" type="button" class="btn btn-dark btn-block mt-2">Meeting</a>               
+                <a href="./takeAttendance.html" type="button" class="btn btn-dark btn-block mb-2 w-200">View Meeting Attendance</a>
+        </form>
+      </div>
+  </body>
+</html> 

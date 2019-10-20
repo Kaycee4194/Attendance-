@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Attendance</title>
+    <script src="./authentication.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Gayathri&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light" id="nav1">
+      <h1 class="display-4 text-success">Decagon Institute</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+      <a href="./createEmployee.html" type="button" class="btn btn-transparent mx-auto w-25">Create Employee</a>
+      <a href="./deleteEmployee.html" type="button" class="btn btn-transparent mx-auto w-25">View/Delete Employee</a>
+      <a href="./meeting.html" type="button" class="btn btn-transparent mx-auto w-25">Meeting</a>               
+      <a href="./takeAttendance.html" type="button" class="btn btn-transparent mx-auto w-25">View Meeting Attendance</a>
+      <button id="logout" type="button" class="btn btn-danger mx-auto w-25">Logout</button>
+    </div>
+  </div>
+    </nav>
+    <div
+      class="mx-auto h-50 w-75"
+      style="margin-top: 10%; border-radius: 10px;"
+    >
+      <table class="table table-dark" id="table1">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Tick</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <div>
+        <button type="submit" id="comot">Delete</button>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-footer">
+              <form class="form1">
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                    <label for="editFirstName" class="lab1"
+                      >First name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="editFirstName"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="editLastName" class="lab1"
+                      >Last name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="editLastName"
+                      required
+                    />
+                  </div>
+                </div>
+                  <div class="form-group">
+                    <label for="editAddress" class="lab1"
+                      >Address</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="editAddress"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="editGender" class="lab1">Gender</label>
+                    <select class="form-control" id="editGender">
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                    <label for="editEmail" class="lab1">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="editEmail"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="editPhoneNo" class="lab1"
+                      >Phone No</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="editPhoneNo"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="editRole" class="lab1">Role</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="editRole"
+                      required
+                    />
+                  </div>
+                <!-- </div> -->
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button id="updateEmployee" type="button" class="btn btn-dark">
+                  Save changes
+                </button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+  <script src="./deleteEmployee.js"></script>
+  <script src="./viewEmployee.js"></script>
+  <script src="./viewEmployee.js"></script>
+  <script src="./logout.js"></script>
+</html>

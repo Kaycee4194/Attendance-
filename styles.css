@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url(Business-wallpaper-HD-Free.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.text-dark{
+  font-family: 'Gayathri', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+.form1{
+  padding: 10px;
+}
+.lab1{
+  color: rgb(84, 6, 6);
+  font-weight: 900;
+}

@@ -21,95 +21,105 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-   
   </head>
   <body>
-      <nav class="navbar navbar-light bg-light" id="nav1">
-        <h1 class="display-4 text-success">Decagon Institute</h1>
-        <button id="logout" type="button" class="btn btn-danger">Logout</button>
-      </nav>
-      <div
-        class="mx-auto h-70 w-75 bg-white"
-        style="margin-top: 10%; border-radius: 10px;"
+    <nav class="navbar navbar-light bg-light" id="nav1">
+      <h1 class="display-4 text-success">Decagon Institute</h1>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <h2 class="text-dark">Employee Data Sheet</h2>
-        <form class="form1">
-          <div class="form-row">
-            <div class="col-md-3 mb-3">
-              <label for="firstName"class="lab1">First name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="firstName"
-                required
-              />
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="lastName"class="lab1">Last name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="lastName"
-                required
-              />
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="address"  class="lab1">Address</label>
-              <input
-                type="text"
-                class="form-control"
-                id="address"
-                required
-              />
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="gender" class="lab1">Gender</label>
-              <select class="form-control" id="gender">
-                <option>Male</option>
-                <option>Female</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="email"class="lab1">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                required
-              />
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="phoneNo"class="lab1">Phone No</label>
-              <input
-                type="text"
-                class="form-control"
-                id="phoneNo"
-                required
-              />
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="role" class="lab1">Role</label>
-              <input
-                type="text"
-                class="form-control"
-                id="role"
-                required
-              />
-            </div>
-          </div>
-          <button class="btn btn-dark" type="submit" id="button3">Create</button>
-        </form>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a
+            href="./createEmployee.html"
+            type="button"
+            class="btn btn-transparent mx-auto w-25"
+            >Create Employee</a
+          >
+          <a
+            href="./deleteEmployee.html"
+            type="button"
+            class="btn btn-transparent mx-auto w-25"
+            >View/Delete Employee</a
+          >
+          <a
+            href="./meeting.html"
+            type="button"
+            class="btn btn-transparent mx-auto w-25"
+            >Meeting</a
+          >
+          <a
+            href="./takeAttendance.html"
+            type="button"
+            class="btn btn-transparent mx-auto w-25"
+            >View Meeting Attendance</a
+          >
+          <button id="logout" type="button" class="btn btn-danger mx-auto w-25">
+            Logout
+          </button>
+        </div>
       </div>
+    </nav>
+    <div
+      class="mx-auto h-70 w-75 bg-white"
+      style="margin-top: 10%; border-radius: 10px;"
+    >
+      <h2 class="text-dark">Employee Data Sheet</h2>
+      <form class="form1">
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="firstName" class="lab1">First name</label>
+            <input type="text" class="form-control" id="firstName" required />
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="lastName" class="lab1">Last name</label>
+            <input type="text" class="form-control" id="lastName" required />
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="address" class="lab1">Address</label>
+            <input type="text" class="form-control" id="address" required />
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="gender" class="lab1">Gender</label>
+            <select class="form-control" id="gender">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="email" class="lab1">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="phoneNo" class="lab1">Phone No</label>
+            <input type="text" class="form-control" id="phoneNo" required />
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="role" class="lab1">Role</label>
+            <input type="text" class="form-control" id="role" required />
+          </div>
+        </div>
+        <button class="btn btn-dark" type="submit" id="button3">Create</button>
+      </form>
+    </div>
   </body>
   <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"
-></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
-<script src="./createEmployee.js"></script>
-<script src="./logout.js"></script>
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+  <script src="./createEmployee.js"></script>
+  <script src="./logout.js"></script>
 </html>

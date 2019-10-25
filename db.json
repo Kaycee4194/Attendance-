@@ -1,0 +1,117 @@
+{
+  "admin": [
+    {
+      "password": "419477",
+      "email": "kaycee@gmail.com"
+    }
+  ],
+  "employees": [
+    {
+      "id": 2,
+      "firstName": "Okafor",
+      "lastName": "Emeka",
+      "address": "Oke-Ira Ogba Ikeja Lagos",
+      "gender": "Male",
+      "email": "mickiejoe@gmail.com",
+      "phoneNo": "09036249762",
+      "role": "Manager"
+    },
+    {
+      "firstName": "Afam ",
+      "lastName": "Winifred",
+      "address": "Ikotun Lagos",
+      "gender": "Female",
+      "email": "winifred@gmail.com",
+      "phoneNo": "07080497685",
+      "role": "Process Manager",
+      "id": 4
+    },
+    {
+      "firstName": "Ochuko",
+      "lastName": "Mangi",
+      "address": "Lekki Phase 1",
+      "gender": "Male",
+      "email": "mangi@gmail.com",
+      "phoneNo": "07038114779",
+      "role": "Software Developer",
+      "id": 6
+    }
+  ],
+  "attendance-register": [
+    {
+      "employees": [
+        {
+          "staffId": "2",
+          "firstName": "Okafor",
+          "attended": true
+        },
+        {
+          "staffId": "3",
+          "firstName": "Obidike",
+          "attended": true
+        },
+        {
+          "staffId": "4",
+          "firstName": "Afam",
+          "attended": true
+        }
+      ],
+      "id": 1,
+      "meetingId": 1
+    },
+    {
+      "employees": [
+        {
+          "staffId": "2",
+          "firstName": "Okafor",
+          "attended": true
+        },
+        {
+          "staffId": "4",
+          "firstName": "Afam",
+          "attended": false
+        }
+      ],
+      "id": 2,
+      "meetingId": 2
+    },
+    {
+      "employees": [
+        {
+          "staffId": "2",
+          "firstName": "Okafor",
+          "attended": false
+        },
+        {
+          "staffId": "4",
+          "firstName": "Afam",
+          "attended": true
+        },
+        {
+          "staffId": "6",
+          "firstName": "Ochuko",
+          "attended": true
+        }
+      ],
+      "id": 3,
+      "meetingId": 3
+    }
+  ],
+  "meetings": [
+    {
+      "title": "SBT",
+      "date": 1571886392567,
+      "id": 1
+    },
+    {
+      "title": "Strategy",
+      "date": 1571933135086,
+      "id": 2
+    },
+    {
+      "title": "Project",
+      "date": 1571933442417,
+      "id": 3
+    }
+  ]
+}

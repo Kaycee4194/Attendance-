@@ -27,14 +27,14 @@
       "id": 4
     },
     {
-      "firstName": "Ochuko",
-      "lastName": "Mangi",
-      "address": "Lekki Phase 1",
-      "gender": "Male",
-      "email": "mangi@gmail.com",
-      "phoneNo": "07038114779",
-      "role": "Software Developer",
-      "id": 6
+      "id": 7,
+      "firstName": "Esther ",
+      "lastName": "Mathew",
+      "address": "Igbo - Efon",
+      "gender": "Female",
+      "email": "esther@gmail.com",
+      "phoneNo": "0803694712",
+      "role": "Developer"
     }
   ],
   "attendance-register": [
@@ -95,6 +95,43 @@
       ],
       "id": 3,
       "meetingId": 3
+    },
+    {
+      "meetingId": 4,
+      "employees": [
+        {
+          "staffId": "2",
+          "firstName": "Okafor",
+          "attended": false
+        },
+        {
+          "staffId": "4",
+          "firstName": "Afam",
+          "attended": false
+        },
+        {
+          "staffId": "6",
+          "firstName": "Ochuko",
+          "attended": false
+        }
+      ],
+      "id": 4
+    },
+    {
+      "employees": [
+        {
+          "staffId": "2",
+          "firstName": "Okafor",
+          "attended": true
+        },
+        {
+          "staffId": "7",
+          "firstName": "Esther",
+          "attended": true
+        }
+      ],
+      "id": 5,
+      "meetingId": 5
     }
   ],
   "meetings": [
@@ -112,6 +149,16 @@
       "title": "Project",
       "date": 1571933442417,
       "id": 3
+    },
+    {
+      "title": "Validation",
+      "date": 1572077762896,
+      "id": 4
+    },
+    {
+      "title": "Christmas Party",
+      "date": 1572095835971,
+      "id": 5
     }
   ]
 }
